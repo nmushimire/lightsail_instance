@@ -11,7 +11,7 @@ pipeline{
                 sh "terraform validate" 
             }
         } 
-         stage ( "terraform fmt") {
+         stage ( "terraform format") {
             steps {
                 sh "terraform fmt" 
             }
