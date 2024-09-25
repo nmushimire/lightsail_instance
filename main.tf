@@ -8,7 +8,7 @@ resource "aws_lightsail_instance" "server" {
     availability_zone = "us-east-1a"
     tags = {
       name="server"
-      env=" test"
+      env="dev"
     }
 }
 
