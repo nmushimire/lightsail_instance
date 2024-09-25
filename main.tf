@@ -2,12 +2,12 @@ provider "aws" {
   region = "us-east-1"
 }
 resource "aws_lightsail_instance" "server" {
-    name = "server"
+    name = "server-dev"
     blueprint_id = "centos_stream_9"
     bundle_id = "small_1_0"
     availability_zone = "us-east-1a"
     tags = {
-      name="server"
+      name="server-dev"
       env="dev"
     }
 }
